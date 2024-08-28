@@ -1,0 +1,24 @@
+{
+  "extends": "@repo/typescript-config/base.json",
+  "include": [
+    "src",
+    "test"
+  ],
+  "compilerOptions": {
+    "module": "ESNext",
+    "noEmit": true,
+    "baseUrl": "",
+    "paths": {
+      "@server": [
+        "src/index.ts"
+      ],
+      "@server/*": [
+        "src/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
