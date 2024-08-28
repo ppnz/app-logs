@@ -1,5 +1,5 @@
 [build]
   base = "/"
   command = "bun --filter 'backend' build:bun"
-  publish = "/backend/dist"
-  edge_functions = "/backend/dist"
+  publish = "/apps/backend/dist"
+  edge_functions = "/apps/backend/dist"
