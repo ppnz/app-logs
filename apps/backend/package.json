@@ -3,7 +3,9 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "build": "tsup-node",
+    "build:bun": "bun build --target=bun ./src/index.ts --outdir ./dist --entry-naming index.[ext]"
   },
   "dependencies": {
     "elysia": "1.1.7"
